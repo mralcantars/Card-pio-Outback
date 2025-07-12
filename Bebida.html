@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardápio </title>
+            <meta charset="utf-8">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const campoBusca = document.querySelector(".campo-busca");
+            const cartoes = document.querySelectorAll(".cartao");
+
+            campoBusca.addEventListener("keyup", function () {
+                const termo = campoBusca.value.toLowerCase();
+
+                cartoes.forEach(function (cartao) {
+                    const legenda = cartao.querySelector(".legenda").textContent.toLowerCase();
+                    if (legenda.includes(termo)) {
+                        cartao.style.display = "inline-block";
+                    } else {
+                        cartao.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+      <div class="cabeçario">
+    <img src="imagem/outback-logo.png" class="logo">
+
+     <div class="busca">
+        <input type="text" placeholder="Pesquisar" class="campo-busca">
+        <img src="imagem/images.png" class="icone-lupa">
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html">Todos</a> |
+        <a href="entradas.html">Entradas</a> |
+        <a href="lanche.html">Lanches</a> |
+        <a href="rodizio.html">Rodizio</a> |
+        <a href="kids.html">Kids</a> |
+        <a href="pratos.html">Pratos</a> |
+        <a href="Bebida.html">Bebidas</a> |
+        <a href="sobremesa.html">Sobremesa</a>
+    </div>
+</div>
+
+        <div class="corpo-texto">
+           <h1 style="text-align: center;">Bebidas</h1>
+        </div>
+       
+        <div class="container-cartoes">
+       
+        <div class="cartao">
+            <img src="imagem/sucos/225x255_Caipirinhas-2.png" alt="Caipirinha">
+            <p class="legenda">Caipirinha</p>
+        </div>
+
+         <div class="cartao">
+            <img src="imagem/sucos/AF_61.4299.3361.5880_51638_EXP_Imagem-Chopp_CHOPP_225X255px-2.jpg" alt="Chopps">
+            <p class="legenda">Chopps</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Flavored-Teas-Trio-Mug-cmyk_tif_305x342.png" alt="Chá preto">
+            <p class="legenda">Chá preto</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Limamora.png" alt="Limamora">
+            <p class="legenda">Limamora</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Maramora-2.png" alt="Maramora">
+            <p class="legenda">Maramora</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Moscow-Mule.png" alt="Moscow mule">
+            <p class="legenda">Moscow mule</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Outback-Cafe╠ü-com-Chocolate_305x342.png" alt="Café">
+            <p class="legenda">Café</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Passion-GT-675x750.jpg" alt="Gin">
+            <p class="legenda">Gin</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Pink-Lemonade-675x750.jpg" alt="Pink limonate">
+            <p class="legenda">Pink limonate</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Strawberry-Rita-1.png" alt="Strawberry rita">
+            <p class="legenda">Strawberry rita</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/sucos/Vinho-Outback-675x750.jpg" alt="Vinho">
+            <p class="legenda">Vinho</p>
+        </div>
+
+        </div>
+
+    </body>
+
+</html>
+

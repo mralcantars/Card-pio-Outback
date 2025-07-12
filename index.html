@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardápio </title>
+            <meta charset="utf-8">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const campoBusca = document.querySelector(".campo-busca");
+            const cartoes = document.querySelectorAll(".cartao");
+
+            campoBusca.addEventListener("keyup", function () {
+                const termo = campoBusca.value.toLowerCase();
+
+                cartoes.forEach(function (cartao) {
+                    const legenda = cartao.querySelector(".legenda").textContent.toLowerCase();
+                    if (legenda.includes(termo)) {
+                        cartao.style.display = "inline-block";
+                    } else {
+                        cartao.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+      <div class="cabeçario">
+    <img src="imagem/outback-logo.png" class="logo">
+
+     <div class="busca">
+        <input type="text" placeholder="Pesquisar" class="campo-busca">
+        <img src="imagem/images.png" class="icone-lupa">
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html">Todos</a> |
+        <a href="entradas.html">Entradas</a> |
+        <a href="lanche.html">Lanches</a> |
+        <a href="rodizio.html">Rodizio</a> |
+        <a href="kids.html">Kids</a> |
+        <a href="pratos.html">Pratos</a> |
+        <a href="Bebida.html">Bebidas</a> |
+        <a href="sobremesa.html">Sobremesa</a>
+    </div>
+</div>
+
+        <div class="corpo-texto">
+           <h1 style="text-align: center;">Todos</h1>
+        </div>
+       
+        <div class="container-cartoes">
+        <div class="cartao">
+            <img src="imagem/Bloomin_Onion_cmyk_outback.png" alt="Bloomin Onion">
+            <p class="legenda">Bloomin Onion</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/225x255_Caipirinhas-2.png" alt="Caipirinha">
+            <p class="legenda">Caipirinha</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/Fritas_Acompanhamento_1000x750.png" alt="Fritas">
+            <p class="legenda">Fritas</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/havanna_thunder_sobremesa.jpg" alt="Havana thunder">
+            <p class="legenda">Havana thunder</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/MacaroonCheese_Acompanhamento_1000x750-675x750.jpg" alt="Macarrão mac and cheese">
+            <p class="legenda">Mac and cheese</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/225x255_Ribs-Double-Decker.png" alt="Ribs double decker">
+            <p class="legenda">Ribs double decker</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/Ribs-On-The-Barbie.png" alt="Ribs On The Barbie">
+            <p class="legenda">Ribs On The Barbie</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/Outback_Salmao_grelhado-675x750.jpg" alt="Salmão grelhado">
+            <p class="legenda">Salmão grelhado</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/14_Salada-da-casa.jpg" alt="Salada da casa">
+            <p class="legenda">Salada da casa</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/toowoomba_pasta_massa.jpg" alt="Toowoomba pasta">
+            <p class="legenda">Toowoomba pasta</p>
+        </div>
+       
+        </div>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardápio </title>
+            <meta charset="utf-8">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const campoBusca = document.querySelector(".campo-busca");
+            const cartoes = document.querySelectorAll(".cartao");
+
+            campoBusca.addEventListener("keyup", function () {
+                const termo = campoBusca.value.toLowerCase();
+
+                cartoes.forEach(function (cartao) {
+                    const legenda = cartao.querySelector(".legenda").textContent.toLowerCase();
+                    if (legenda.includes(termo)) {
+                        cartao.style.display = "inline-block";
+                    } else {
+                        cartao.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+    <div class="cabeçario">
+    <img src="imagem/outback-logo.png" class="logo">
+
+     <div class="busca">
+        <input type="text" placeholder="Pesquisar" class="campo-busca">
+        <img src="imagem/images.png" class="icone-lupa">
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html">Todos</a> |
+        <a href="entradas.html">Entradas</a> |
+        <a href="lanche.html">Lanches</a> |
+        <a href="rodizio.html">Rodizio</a> |
+        <a href="kids.html">Kids</a> |
+        <a href="pratos.html">Pratos</a> |
+        <a href="Bebida.html">Bebidas</a> |
+        <a href="sobremesa.html">Sobremesa</a>
+    </div>
+</div>
+
+        <div class="corpo-texto">
+           <h1 style="text-align: center;">Pratos</h1>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/alice_springs_chicken.jpg" alt="alice springs chicken">
+            <p class="legenda">Alice springs chicken</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Arroz-Pilaf.png" alt="Arroz pilaf">
+            <p class="legenda">Arroz pilaf</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Caeser-Salad.png" alt="Ceaser salad">
+            <p class="legenda">Ceaser salad</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Chicken-Pasta-Primavera.png" alt="Chicken Pasta Primavera">
+            <p class="legenda">Chicken Pasta Primavera</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/grilled_fish_shrimp_scampi.jpg" alt="Grilleed fish">
+            <p class="legenda">Grilled fish</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/OBK_PastaPrimavera-675x750.jpg" alt="Pasta primavera">
+            <p class="legenda">Pasta primavera</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Outback-Megaribs.jpg" alt="Mega ribs">
+            <p class="legenda">Mega ribs</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/OUTBACK_DELIVERY_STEAK_THE_OUTBACK_SPECIAL-scaled-1-675x750.jpg" alt="Steak outback">
+            <p class="legenda">Steak outback</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/OUTBACK_LUNCH-MENU_08-01-2024-097-675x750.jpg" alt="Luch menu">
+            <p class="legenda">Lunch menu</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Outback_Salmao_grelhado-675x750.jpg" alt="Salmão grelhado">
+            <p class="legenda">Salmão grelhado</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/Tabua_RIBS_STEAK-675x741.webp" alt="Tabua RIBS STEAK">
+            <p class="legenda">Tabua RIBS STEAK</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/pratos/toowoomba_pasta_massa.jpg" alt="toowoomba pasta">
+            <p class="legenda">toowoomba pasta</p>
+        </div>
+       
+        </div>
+
+    </body>
+</html>
+

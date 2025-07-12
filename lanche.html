@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardápio </title>
+            <meta charset="utf-8">
+    </head>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const campoBusca = document.querySelector(".campo-busca");
+            const cartoes = document.querySelectorAll(".cartao");
+
+            campoBusca.addEventListener("keyup", function () {
+                const termo = campoBusca.value.toLowerCase();
+
+                cartoes.forEach(function (cartao) {
+                    const legenda = cartao.querySelector(".legenda").textContent.toLowerCase();
+                    if (legenda.includes(termo)) {
+                        cartao.style.display = "inline-block";
+                    } else {
+                        cartao.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+      <div class="cabeçario">
+    <img src="imagem/outback-logo.png" class="logo">
+
+     <div class="busca">
+        <input type="text" placeholder="Pesquisar" class="campo-busca">
+        <img src="imagem/images.png" class="icone-lupa">
+    </div>
+
+    <div class="menu-links">
+        <a href="index.html">Todos</a> |
+        <a href="entradas.html">Entradas</a> |
+        <a href="lanche.html">Lanches</a> |
+        <a href="rodizio.html">Rodizio</a> |
+        <a href="kids.html">Kids</a> |
+        <a href="pratos.html">Pratos</a> |
+        <a href="Bebida.html">Bebidas</a> |
+        <a href="sobremesa.html">Sobremesa</a>
+    </div>
+</div>
+
+        <div class="corpo-texto">
+           <h1 style="text-align: center;">Lanches</h1>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/lanche/Obk_TheOutbacker-675x750.jpg" alt="The Outbacker">
+            <p class="legenda">The Outbacker</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/lanche/OBK_AussiePlant-675x750.jpg" alt="AussiePlant">
+            <p class="legenda">Aussie Plant</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/lanche/burger_picanha_outback-2-675x750.webp" alt="Burger picanha">
+            <p class="legenda">Burger picanha</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/lanche/225x255_Ribs-Double-Decker.png" alt="Ribs Double Decker">
+            <p class="legenda">Ribs Double Decker</p>
+        </div>
+
+        <div class="cartao">
+            <img src="imagem/lanche/225x255_Firecracker-Shrimp-Burger.png" alt="Firecracker Shrimp Burger">
+            <p class="legenda">Firecracker Shrimp Burger</p>
+        </div>
+       
+        </div>
+
+    </body>
+
+</html>
+

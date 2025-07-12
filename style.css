@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.cabeçario {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgb(253, 255, 214);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 60px;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.campo-busca {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.icone-lupa {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+a:link{
+    text-decoration: none;
+    color:rgb(179, 45, 45);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:visited{
+    text-decoration: none;
+    color:rgb(221, 0, 0);
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.corpo-texto{
+    background-color:rgb(253, 255, 214);
+    font-size: medium;
+    color:rgb(179, 45, 45);
+    margin-left: 30px;
+    padding:5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+    background-color: rgb(253, 255, 214);
+}
+
+.cartao {
+  border-radius: 20px; /* Arredonda os cantos do contêiner */
+  padding: 10px 10px 25px 10px; /* Espaço interno para criar uma borda branca ao redor da imagem */
+  background: radial-gradient(rgba(255, 254, 254, 0.4), rgba(255, 255, 255, 0.9)); 
+  /* Fundo com esfumado do centro (cinza escuro) para as bordas (preto) */
+  margin-left: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  /* Sombra ao redor do contêiner para reforçar o efeito de esfumado */
+ 
+  width: 200px; /* Tamanho fixo */
+  margin: auto; /* Centraliza na coluna */
+  text-align: center; /* Centraliza a legenda */
+
+  display: inline-block; /* Permite que fique na linha com outros elementos se necessário */
+}
+
+.cartao img {
+  border-radius: 15px;
+  width: 180px;     /* Largura fixa */
+  height: 180px;    /* Altura fixa */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;   /* Centraliza dentro do cartão */
+}
+
+.legenda {
+  margin-top: 10px;         /* Espaço entre a imagem e o texto */
+  font-size: 20px;
+  font-weight: 600;
+  color:rgb(179, 45, 45);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container-cartoes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas por linha */
+  gap: 30px; /* Espaço uniforme entre os cartões */
+  padding: 30px;
+}
+
